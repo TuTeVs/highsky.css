@@ -41,7 +41,7 @@
 /* Set the image for vfrc-image */
 .vfrc-image {
   background-image: url('https://static.wixstatic.com/media/a91b81_d4cb4032c84941a5b6341fb9dbd4cd43~mv2.png') !important;
-  background-size: cover !important;
+  background-size: contain !important;
   background-position: center !important;
   width: 100% !important; /* Adjust width as needed */
   height: auto !important; /* Adjust height as needed */
@@ -50,7 +50,7 @@
 /* Set the avatar image */
 .vfrc-avatar {
   background-image: url('https://static.wixstatic.com/media/a91b81_dd86513dd5784a9dbe46952f15c50f90~mv2.png') !important;
-  background-size: cover !important;
+  background-size: contain !important;
   background-position: center !important;
   width: 60px !important; /* Adjust width as needed */
   height: 60px !important; /* Adjust height as needed */
