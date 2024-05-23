@@ -47,6 +47,12 @@
   height: auto !important; /* Adjust height as needed */
 }
 
+/* Ensure the existing image is not visible */
+.vfrc-image img {
+  display: none !important;
+}
+
+
 /* Set the avatar image */
 .vfrc-avatar {
   background-image: url('https://static.wixstatic.com/media/a91b81_dd86513dd5784a9dbe46952f15c50f90~mv2.png') !important;
@@ -56,3 +62,9 @@
   height: 60px !important; /* Adjust height as needed */
   border-radius: 50% !important; /* Make sure the avatar is circular */
 }
+  
+/* Ensure the existing avatar is not visible */
+.vfrc-avatar img {
+  display: none !important;
+}
+
