@@ -20,47 +20,35 @@
 
 
 /*WATERMARK*/
-/* Override the existing watermark content */
-.vfrc-footer--watermark::before {
-  content: "Powered by " !important;
-  display: inline !important;
-}
-
-.vfrc-footer--watermark a {
-  content: "HighSkyAI" !important;
-  text-decoration: none !important;
-  color: #888 !important; /* Match the text color */
-  margin-left: 5px; /* Space between text and link */
-  display: inline !important;
-}
-
-/* Hide existing content after the link */
-.vfrc-footer--watermark a::after {
-  content: "" !important; /* Remove the existing text */
-}
-
-/* Ensure the link points to HighSkyAI */
-.vfrc-footer--watermark a[href] {
-  display: none !important; /* Hide existing Voiceflow link */
-}
-
-.vfrc-footer--watermark a::before {
-  content: "HighSkyAI" !important;
-  href: "https://www.highsky.ai/bg/digital-agent/" !important;
-  display: inline !important;
-}
-
-/* Ensure the watermark styling */
+/* Hide existing watermark text */
 .vfrc-footer--watermark {
-  display: block !important;
-  text-align: center !important;
-  padding: 10px !important;
-  font-size: 12px !important;
-  color: #888 !important;
-  position: relative !important;
-  z-index: 10 !important;
-  background-color: #fff !important; /* Add a background color for better visibility */
+  color: transparent;
+  text-decoration: none;
 }
+
+/* Add new content */
+.vfrc-footer--watermark::before {
+  content: 'Created by ';
+  color: black; /* Change color as needed */
+  visibility: visible;
+}
+
+.vfrc-footer--watermark::after {
+  content: 'HighSkyAI';
+  color: blue; /* Specific blue color can be defined using hex code */
+  visibility: visible;
+}
+
+/* Making HighSkyAI clickable and leading to the link */
+.vfrc-footer--watermark a {
+  color: blue; /* This assumes <a> is inside the watermark */
+  text-decoration: none;
+}
+
+.vfrc-footer--watermark a:hover {
+  text-decoration: underline;
+}
+
 
 
 
