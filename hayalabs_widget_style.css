@@ -20,32 +20,18 @@
 
 
 /*WATERMARK*/
-/* Hide existing watermark text */
 .vfrc-footer--watermark {
-  display: none;
-}
-
-/* Add new content */
-.vfrc-footer--watermark::before {
-  content: 'Created by ';
-  color: black; /* Change color as needed */
-  visibility: visible;
+    font-size: 0; /* Hides text but keeps the element in the flow */
+    display: block; /* Ensures the element is still in the layout */
 }
 
 .vfrc-footer--watermark::after {
-  content: 'HighSkyAI';
-  color: blue; /* Specific blue color can be defined using hex code */
-  visibility: visible;
-}
-
-/* Making HighSkyAI clickable and leading to the link */
-.vfrc-footer--watermark a {
-  color: blue; /* This assumes <a> is inside the watermark */
-  text-decoration: none;
-}
-
-.vfrc-footer--watermark a:hover {
-  text-decoration: underline;
+    content: 'Created by HighSkyAI';
+    font-size: 16px; /* Resets font size for new content */
+    color: blue; /* Styling to look like a hyperlink */
+    text-decoration: underline;
+    cursor: pointer; /* Mimics the look of a link */
+    visibility: visible; /* Ensures it's seen */
 }
 
 
