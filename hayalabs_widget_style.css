@@ -1,18 +1,18 @@
-/* Style the header with a custom background image */
-.vfrc-header {
-    background-image: url('https://static.wixstatic.com/media/a91b81_dd86513dd5784a9dbe46952f15c50f90~mv2.png');
-    background-size: cover;
-    background-position: center;
-    height: 100px; /* Adjust height as needed */
-  }
-  
-  /* Add "powered by" text at the bottom of the chat widget */
-  .vf-footer::after {
-    content: "Powered by HighSkyAI";
-    display: block;
-    text-align: center;
-    padding: 10px;
-    font-size: 12px;
-    color: #888;
-  }
-  
+/* Change the chat bubble icon */
+.vfrc-launcher {
+  background-image: url('https://static.wixstatic.com/media/a91b81_dd86513dd5784a9dbe46952f15c50f90~mv2.png');
+  background-size: cover;
+  background-position: center;
+  width: 60px; /* Adjust width as needed */
+  height: 60px; /* Adjust height as needed */
+}
+
+/* Add "Powered by HighSkyAI" text at the bottom of the chat widget */
+.vfrc-footer--watermark {
+  content: "Powered by HighSkyAI";
+  display: block;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  color: #888;
+}
