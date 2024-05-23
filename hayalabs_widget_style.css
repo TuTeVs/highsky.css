@@ -29,26 +29,19 @@
 
 .vfrc-footer--watermark::after {
     content: 'Created by HighSkyAI';
-    font-size: 12px; /* Resets font size for new content */
+    font-size: 14px; /* Resets font size for new content */
     color: blue; /* Styling to look like a hyperlink */
     cursor: pointer; /* Mimics the look of a link */
     visibility: visible; /* Ensures it's seen */
 }
 
-.vfrc-footer--watermark::before {
-    content: ''; /* Empty content for the link */
-    position: absolute; /* Position absolutely within the relative .vfrc-footer--watermark */
-    top: 0;
-    left: 50%; /* Centers horizontally */
-    transform: translateX(-50%); /* Centers horizontally */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    cursor: pointer; /* Pointer cursor */
-    z-index: 1; /* Ensure it's on top */
+.vfrc-footer--watermark a {
+    color: blue; /* Styling to look like a hyperlink */
+    text-decoration: none; /* Remove underline */
 }
 
-.vfrc-footer--watermark:hover::before {
-    content: ''; /* Keeps the content empty on hover */
+.vfrc-footer--watermark a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
 
 
