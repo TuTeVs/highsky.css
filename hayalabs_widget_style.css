@@ -29,7 +29,7 @@
 
 .vfrc-footer--watermark::after {
     content: 'Created by HighSkyAI';
-    font-size: 16px; /* Resets font size for new content */
+    font-size: 12px; /* Resets font size for new content */
     color: blue; /* Styling to look like a hyperlink */
     cursor: pointer; /* Mimics the look of a link */
     visibility: visible; /* Ensures it's seen */
