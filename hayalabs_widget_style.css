@@ -15,9 +15,26 @@
 }
 
 
+
+
+
+
 /*WATERMARK*/
-/* Add "Powered by HighSkyAI" text at the bottom of the chat widget */
+/* Ensure the selector targets the correct element and override other styles */
 .vfrc-footer--watermark {
+  display: block !important;
+  text-align: center !important;
+  padding: 10px !important;
+  font-size: 12px !important;
+  color: #888 !important;
+  position: relative !important;
+  z-index: 10 !important;
+  background-color: #fff !important; /* Add a background color for better visibility */
+}
+
+/* Add watermark as a pseudo-element for consistent display */
+.vfrc-footer--watermark::before {
+  content: "Powered by HighSkyAI" !important;
   display: block !important;
   text-align: center;
   padding: 10px;
@@ -25,18 +42,11 @@
   color: #888;
 }
 
-.vfrc-footer--watermark::before {
-  content: "Powered by HighSkyAI";
-  display: block;
-}
-
-/* Optional: To ensure the footer watermark is always visible */
-.vfrc-footer--watermark {
-  position: relative;
-  z-index: 10;
-  background-color: #fff; /* Add a background color if needed for better visibility */
 
 
+
+
+  
 /* IMAGES INSIDE OF CHAT */
 /* Set the image for vfrc-image */
 .vfrc-image {
