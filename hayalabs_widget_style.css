@@ -20,7 +20,7 @@
 
 
 /*WATERMARK*/
-/* Override the watermark content and link */
+/* Override the existing watermark content */
 .vfrc-footer--watermark::before {
   content: "Powered by " !important;
   display: inline !important;
@@ -31,17 +31,26 @@
   text-decoration: none !important;
   color: #888 !important; /* Match the text color */
   margin-left: 5px; /* Space between text and link */
+  display: inline !important;
 }
 
-.vfrc-footer--watermark a:after {
-  content: " " !important; /* Remove the existing text */
+/* Hide existing content after the link */
+.vfrc-footer--watermark a::after {
+  content: "" !important; /* Remove the existing text */
 }
 
-.vfrc-footer--watermark a {
+/* Ensure the link points to HighSkyAI */
+.vfrc-footer--watermark a[href] {
+  display: none !important; /* Hide existing Voiceflow link */
+}
+
+.vfrc-footer--watermark a::before {
+  content: "HighSkyAI" !important;
   href: "https://www.highsky.ai/bg/digital-agent/" !important;
+  display: inline !important;
 }
 
-/* Ensure the existing watermark is hidden */
+/* Ensure the watermark styling */
 .vfrc-footer--watermark {
   display: block !important;
   text-align: center !important;
