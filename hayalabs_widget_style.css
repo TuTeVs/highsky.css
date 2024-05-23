@@ -27,3 +27,25 @@
   content: "Powered by HighSkyAI";
   display: block;
 }
+
+/* Style the header with a custom background image */
+.vfrc-header {
+  background-image: url('https://static.wixstatic.com/media/a91b81_dd86513dd5784a9dbe46952f15c50f90~mv2.png');
+  background-size: cover;
+  background-position: center;
+  height: 100px; /* Adjust height as needed */
+}
+
+/* Change the avatar image */
+.vfrc-avatar {
+  background-image: url('https://static.wixstatic.com/media/a91b81_dd86513dd5784a9dbe46952f15c50f90~mv2.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* Change the general icon image */
+.vfrc-icon {
+  background-image: url('https://static.wixstatic.com/media/a91b81_d4cb4032c84941a5b6341fb9dbd4cd43~mv2.png') !important;
+  background-size: contain !important;
+  background-position: center !important;
+}
