@@ -20,7 +20,28 @@
 
 
 /*WATERMARK*/
-/* Ensure the selector targets the correct element and override other styles */
+/* Override the watermark content and link */
+.vfrc-footer--watermark::before {
+  content: "Powered by " !important;
+  display: inline !important;
+}
+
+.vfrc-footer--watermark a {
+  content: "HighSkyAI" !important;
+  text-decoration: none !important;
+  color: #888 !important; /* Match the text color */
+  margin-left: 5px; /* Space between text and link */
+}
+
+.vfrc-footer--watermark a:after {
+  content: " " !important; /* Remove the existing text */
+}
+
+.vfrc-footer--watermark a {
+  href: "https://www.highsky.ai/bg/digital-agent/" !important;
+}
+
+/* Ensure the existing watermark is hidden */
 .vfrc-footer--watermark {
   display: block !important;
   text-align: center !important;
@@ -30,16 +51,6 @@
   position: relative !important;
   z-index: 10 !important;
   background-color: #fff !important; /* Add a background color for better visibility */
-}
-
-/* Add watermark as a pseudo-element for consistent display */
-.vfrc-footer--watermark::before {
-  content: "Powered by HighSkyAI" !important;
-  display: block !important;
-  text-align: center;
-  padding: 10px;
-  font-size: 12px;
-  color: #888;
 }
 
 
