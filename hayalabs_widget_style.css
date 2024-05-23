@@ -22,8 +22,7 @@
 /*WATERMARK*/
 /* Hide existing watermark text */
 .vfrc-footer--watermark {
-  color: transparent;
-  text-decoration: none;
+  display: none;
 }
 
 /* Add new content */
