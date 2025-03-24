@@ -1,0 +1,58 @@
+/* CHAT BUBBLE ICON */
+.vfrc-launcher {
+  background-image: url('https://static.wixstatic.com/media/a91b81_dd86513dd5784a9dbe46952f15c50f90~mv2.png') !important;
+  background-size: contain !important;
+  background-position: center !important;
+  width: 60px !important; /* Adjust width as needed */
+  height: 60px !important; /* Adjust height as needed */
+  border: none !important; /* Remove any borders */
+  padding: 0 !important; /* Remove any padding */
+}
+
+/* Ensure the existing icon is not visible */
+.vfrc-launcher img {
+  display: none !important;
+}
+
+/*WATERMARK*/
+.vfrc-footer--watermark {
+    display: block; /* Ensures the element is in the layout */
+    text-align: center; /* Centers the text within the footer */
+    font-size: 0; /* Hides original text if any exists, while keeping the element in document flow */
+    width: 100%; /* Ensures the footer spans the full width of its container */
+}
+
+.vfrc-footer--watermark::after {
+    content: 'Created by HighSkyAI for Itt Consultants';
+    font-size: 10px; /* Sets font size for new content */
+    color: gray; /* Sets a non-intrusive gray color */
+    cursor: default; /* Default cursor to indicate non-clickable text */
+    visibility: visible; /* Ensures it's seen */
+}
+
+/* Set the avatar image */
+.vfrc-avatar {
+  background-image: url('https://static.wixstatic.com/media/a91b81_dd86513dd5784a9dbe46952f15c50f90~mv2.png') !important;
+  background-size: contain !important; /* Cover the entire area */
+  background-position: center !important;
+}
+
+/* Ensure the existing avatar is not visible */
+.vfrc-avatar img {
+  display: none !important;
+}
+
+/* Make placeholder text completely invisible */
+textarea[placeholder]::placeholder,
+.c-fYYkXN::placeholder,
+textarea[id^="vf-chat-input"]::placeholder {
+  color: transparent !important;
+  opacity: 0 !important;
+}
+
+/* Force placeholder to behave as if it's empty */
+textarea[placeholder],
+.c-fYYkXN,
+textarea[id^="vf-chat-input"] {
+  placeholder: "" !important; /* Non-standard but worth trying */
+}
