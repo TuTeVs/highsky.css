@@ -22,34 +22,6 @@
     width: 100%; /* Ensures the footer spans the full width of its container */
 }
 
-/* Position the parent container properly */
-.vfrc-chat-input {
-  position: relative !important;
-}
-
-/* Hide the original placeholder text */
-.vfrc-input::placeholder {
-  opacity: 0 !important;
-}
-
-/* Create fake placeholder */
-.vfrc-chat-input::before {
-  content: "Message...";
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #757575;
-  pointer-events: none;
-  transition: opacity 0.2s;
-}
-
-/* Hide the fake placeholder when input is not empty or focused */
-.vfrc-input:not(:placeholder-shown) ~ .vfrc-chat-input::before,
-.vfrc-input:focus ~ .vfrc-chat-input::before {
-  opacity: 0;
-}
-
 .vfrc-footer--watermark::after {
     content: 'Created by HighSkyAI for Framar';
     font-size: 10px; /* Sets font size for new content */
