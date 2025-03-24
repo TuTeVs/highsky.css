@@ -14,6 +14,14 @@
   display: none !important;
 }
 
+/* Force placeholder to behave as if it's empty */
+textarea[placeholder],
+.c-fYYkXN,
+textarea[id^="vf-chat-input"] {
+  placeholder: "" !important; /* Non-standard but worth trying */
+}
+
+
 /*WATERMARK*/
 .vfrc-footer--watermark {
     display: block; /* Ensures the element is in the layout */
@@ -42,10 +50,3 @@
   display: none !important;
 }
 
-/* Make placeholder text completely invisible */
-textarea[placeholder]::placeholder,
-.c-fYYkXN::placeholder,
-textarea[id^="vf-chat-input"]::placeholder {
-  color: transparent !important;
-  opacity: 0 !important;
-}
