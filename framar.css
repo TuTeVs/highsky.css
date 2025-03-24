@@ -49,10 +49,3 @@ textarea[id^="vf-chat-input"]::placeholder {
   color: transparent !important;
   opacity: 0 !important;
 }
-
-/* Force placeholder to behave as if it's empty */
-textarea[placeholder],
-.c-fYYkXN,
-textarea[id^="vf-chat-input"] {
-  placeholder: "" !important; /* Non-standard but worth trying */
-}
