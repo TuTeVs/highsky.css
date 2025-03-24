@@ -22,7 +22,7 @@
     width: 100%; /* Ensures the footer spans the full width of its container */
 }
 
-.vfrc-input::placeholder {
+.vfrc-input {
   content: "Message. . .";
 }
 
