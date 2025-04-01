@@ -1,6 +1,6 @@
 /* CHAT BUBBLE ICON */
 .vfrc-launcher {
-  background-image: url('https://static.wixstatic.com/media/a91b81_dd86513dd5784a9dbe46952f15c50f90~mv2.png') !important;
+  background-image: url('https://static.wixstatic.com/media/a91b81_4260b4b23c8c4481bc7c005ad3e5b8df~mv2.gif') !important;
   background-size: contain !important;
   background-position: center !important;
   width: 60px !important; /* Adjust width as needed */
@@ -32,7 +32,7 @@
 
 /* Set the avatar image */
 .vfrc-avatar {
-  background-image: url('https://static.wixstatic.com/media/a91b81_dd86513dd5784a9dbe46952f15c50f90~mv2.png') !important;
+  background-image: url('https://static.wixstatic.com/media/a91b81_3013f1ca17ac476993ad18a35f339b81~mv2.png') !important;
   background-size: contain !important; /* Cover the entire area */
   background-position: center !important;
 }
