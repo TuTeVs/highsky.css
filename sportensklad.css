@@ -1,6 +1,6 @@
 /* CHAT BUBBLE ICON */
 .vfrc-launcher {
-  background-image: url('https://github.com/TuTeVs/highsky.css/blob/main/sportensklad.css') !important;
+  background-image: url('https://highsky-web.netlify.app/assets/skalad-Bo7E4SNS.png') !important;
   background-size: contain !important;
   background-position: center !important;
   width: 60px !important; /* Adjust width as needed */
@@ -32,7 +32,7 @@
 
 /* Set the avatar image */
 .vfrc-avatar {
-  background-image: url('https://static.wixstatic.com/media/a91b81_fe77bbc7275640bb8c53fcf78b07fa55~mv2.png') !important;
+  background-image: url('https://highsky-web.netlify.app/assets/skalad-Bo7E4SNS.png') !important;
   background-size: contain !important; /* Cover the entire area */
   background-position: center !important;
 }
