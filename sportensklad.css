@@ -6,6 +6,9 @@
   width: 60px !important; /* Adjust width as needed */
   height: 60px !important; /* Adjust height as needed */
   border: none !important; /* Remove any borders */
+  border-radius: 0 !important; /* Remove border radius */
+  outline: none !important; /* Remove outline */
+  box-shadow: none !important; /* Remove box shadow */
   padding: 0 !important; /* Remove any padding */
 }
 
