@@ -1,22 +1,19 @@
 /* CHAT BUBBLE ICON */
 .vfrc-launcher {
-  background-image: url('https://highsky.ai/assets/skaladnew-BC0YI5sF.png') !important;
-  background-size: 210% !important; /* Scale up the image more */
+  background-image: url('https://highsky-web.netlify.app/assets/skalad-Bo7E4SNS.png') !important;
+  background-size: contain !important;
   background-position: center !important;
-  background-repeat: no-repeat !important;
-  width: 70px !important; /* Make the icon bigger */
-  height: 70px !important; /* Make the icon bigger */
+  width: 60px !important; /* Adjust width as needed */
+  height: 60px !important; /* Adjust height as needed */
   border: none !important; /* Remove any borders */
   padding: 0 !important; /* Remove any padding */
-  border-radius: 50% !important; /* Make it circular */
-  overflow: hidden !important; /* Hide the blue background */
-  clip-path: circle(40% at center) !important; /* Clip to show only the center portion */
 }
 
 /* Ensure the existing icon is not visible */
 .vfrc-launcher img {
   display: none !important;
 }
+
 
 /*WATERMARK*/
 .vfrc-footer--watermark {
@@ -27,7 +24,7 @@
 }
 
 .vfrc-footer--watermark::after {
-    content: 'Created by HighSkyAI for Sportensklad';
+    content: 'HighSkyAI | KvantService';
     font-size: 10px; /* Sets font size for new content */
     color: gray; /* Sets a non-intrusive gray color */
     cursor: default; /* Default cursor to indicate non-clickable text */
@@ -36,7 +33,7 @@
 
 /* Set the avatar image */
 .vfrc-avatar {
-  background-image: url('https://highsky-web.netlify.app/assets/logo-sportensklad-otpred-D0_2nqat.png') !important;
+  background-image: url('https://highsky-web.netlify.app/assets/skalad-Bo7E4SNS.png') !important;
   background-size: contain !important; /* Cover the entire area */
   background-position: center !important;
 }
