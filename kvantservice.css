@@ -7,6 +7,12 @@
   height: 60px !important; /* Adjust height as needed */
   border: none !important; /* Remove any borders */
   padding: 0 !important; /* Remove any padding */
+  
+  /* POSITIONING - Move to right side */
+  position: fixed !important;
+  right: 20px !important; /* Distance from right edge */
+  left: auto !important; /* Override any left positioning */
+  bottom: 20px !important; /* Distance from bottom edge */
 }
 
 /* Ensure the existing icon is not visible */
