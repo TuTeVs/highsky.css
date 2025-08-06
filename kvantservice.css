@@ -16,7 +16,7 @@
 }
 
 /* Force chat window to open on the right side */
-.vfrc-widget {
+.vfrc-chat--overlay {
   right: 20px !important;
   left: auto !important;
 }
