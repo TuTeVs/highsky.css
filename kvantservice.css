@@ -15,10 +15,20 @@
   bottom: 20px !important; /* Distance from bottom edge */
 }
 
-/* Force chat window to open on the right side */
-.vfrc-chat--overlay {
+/* Force chat window to open on the right side - try multiple selectors */
+.vfrc-chat {
   right: 20px !important;
   left: auto !important;
+}
+
+.voiceflow-chat {
+  right: 20px !important;
+  left: auto !important;
+}
+
+/* Ensure the existing icon is not visible */
+.vfrc-launcher img {
+  display: none !important;
 }
 
 /* Ensure the existing icon is not visible */
