@@ -3,16 +3,16 @@
   background-image: url('https://highsky-web.netlify.app/assets/skalad-Bo7E4SNS.png') !important;
   background-size: contain !important;
   background-position: center !important;
-  width: 60px !important;
-  height: 60px !important;
-  border: none !important;
-  padding: 0 !important;
+  width: 60px !important; /* Adjust width as needed */
+  height: 60px !important; /* Adjust height as needed */
+  border: none !important; /* Remove any borders */
+  padding: 0 !important; /* Remove any padding */
   
   /* POSITIONING - Move to right side */
   position: fixed !important;
-  right: 20px !important;
-  left: auto !important;
-  bottom: 20px !important;
+  right: 20px !important; /* Distance from right edge */
+  left: auto !important; /* Override any left positioning */
+  bottom: 20px !important; /* Distance from bottom edge */
 }
 
 /* FORCE CHAT WIDGET TO RIGHT SIDE */
@@ -23,18 +23,9 @@
   bottom: 100px !important; /* Position above the launcher */
 }
 
-/* Target the chat container with higher specificity */
-[class*="voiceflow"] {
-  right: 20px !important;
-  left: auto !important;
-}
-
-/* Target iframe if chat is in iframe */
-iframe[id*="voiceflow"],
-iframe[class*="voiceflow"] {
-  right: 20px !important;
-  left: auto !important;
-  position: fixed !important;
+/* Ensure the existing icon is not visible */
+.vfrc-launcher img {
+  display: none !important;
 }
 
 /* Ensure the existing icon is not visible */
@@ -44,24 +35,24 @@ iframe[class*="voiceflow"] {
 
 /*WATERMARK*/
 .vfrc-footer--watermark {
-    display: block;
-    text-align: center;
-    font-size: 0;
-    width: 100%;
+    display: block; /* Ensures the element is in the layout */
+    text-align: center; /* Centers the text within the footer */
+    font-size: 0; /* Hides original text if any exists, while keeping the element in document flow */
+    width: 100%; /* Ensures the footer spans the full width of its container */
 }
 
 .vfrc-footer--watermark::after {
     content: 'HighSkyAI | KvantService';
-    font-size: 10px;
-    color: gray;
-    cursor: default;
-    visibility: visible;
+    font-size: 10px; /* Sets font size for new content */
+    color: gray; /* Sets a non-intrusive gray color */
+    cursor: default; /* Default cursor to indicate non-clickable text */
+    visibility: visible; /* Ensures it's seen */
 }
 
 /* Set the avatar image */
 .vfrc-avatar {
   background-image: url('https://highsky-web.netlify.app/assets/skalad-Bo7E4SNS.png') !important;
-  background-size: contain !important;
+  background-size: contain !important; /* Cover the entire area */
   background-position: center !important;
 }
 
