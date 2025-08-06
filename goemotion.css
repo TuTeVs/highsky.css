@@ -1,1 +1,67 @@
+/* CHAT BUBBLE ICON */
+.vfrc-launcher {
+  background-image: url('https://highsky-web.netlify.app/assets/skalad-Bo7E4SNS.png') !important;
+  background-size: contain !important;
+  background-position: center !important;
+  width: 60px !important;
+  height: 60px !important;
+  border: none !important;
+  padding: 0 !important;
+  
+  /* POSITIONING - Move to right side */
+  position: fixed !important;
+  right: 20px !important;
+  left: auto !important;
+  bottom: 20px !important;
+}
 
+/* MOVE CHAT TO RIGHT AND LOWER */
+.vfrc-chat {
+  position: fixed !important;
+  right: 20px !important;
+  left: auto !important;
+  bottom: 90px !important; /* LOWER - closer to launcher */
+  transform: none !important;
+}
+
+/* ALSO TARGET THE OVERLAY */
+.vfrc-chat--overlay {
+  position: fixed !important;
+  right: 20px !important;
+  left: auto !important;
+  bottom: 90px !important; /* LOWER - closer to launcher */
+  transform: none !important;
+}
+
+/* Ensure the existing icon is not visible */
+.vfrc-launcher img {
+  display: none !important;
+}
+
+/*WATERMARK*/
+.vfrc-footer--watermark {
+    display: block;
+    text-align: center;
+    font-size: 0;
+    width: 100%;
+}
+
+.vfrc-footer--watermark::after {
+    content: 'HighSkyAI | KvantService';
+    font-size: 10px;
+    color: gray;
+    cursor: default;
+    visibility: visible;
+}
+
+/* Set the avatar image */
+.vfrc-avatar {
+  background-image: url('https://goemotion.bg/wp-content/uploads/2024/11/main-logo.webp') !important;
+  background-size: contain !important;
+  background-position: center !important;
+}
+
+/* Ensure the existing avatar is not visible */
+.vfrc-avatar img {
+  display: none !important;
+}
