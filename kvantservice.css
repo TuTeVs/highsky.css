@@ -1,17 +1,16 @@
 /* CHAT BUBBLE ICON */
-.vfrc-launcher{
-  background-image: url('https://highsky.ai/assets/skalad5-PJoUosbc.png') !important;
-  background-size: 130% !important; /* Scale up the image more */
+.vfrc-launcher {
+  background-image: url('https://highsky-web.netlify.app/assets/skalad-Bo7E4SNS.png') !important;
+  background-size: contain !important;
   background-position: center !important;
-  background-repeat: no-repeat !important;
-  width: 50px !important; /* Make the icon bigger */
-  height: 50px !important; /* Make the icon bigger */
+  width: 60px !important; /* Adjust width as needed */
+  height: 60px !important; /* Adjust height as needed */
   border: none !important; /* Remove any borders */
   padding: 0 !important; /* Remove any padding */
-  /* margin: 0 !important; Remove any margin */
-  border-radius: 50% !important; /* Make it circular */
-  overflow: hidden !important; /* Hide the blue background */
-  /* clip-path: circle(10% at center) !important; /* Clip to show only the center portion */
+  right: 10px !important;
+  bottom: 10px !important;
+  position: fixed !important; /* Ensure fixed positioning */
+  transform: none !important; /* Reset any transforms */
 }
 
 /* Ensure the existing icon is not visible */
@@ -19,6 +18,63 @@
   display: none !important;
 }
 
+/* Root Voiceflow container - target the main wrapper */
+#vf-widget,
+[data-voiceflow-chat],
+.voiceflow-chat,
+.vf-widget,
+[data-vf-container] {
+  z-index: 999999 !important; /* Much higher than cart z-index */
+}
+
+/* Chat container and overlay */
+.vfrc-widget {
+  z-index: 999999 !important; /* Much higher than cart z-index */
+}
+
+.vfrc-overlay {
+  z-index: 999999 !important; /* Much higher than cart z-index */
+}
+
+.vfrc-chat {
+  z-index: 999999 !important; /* Much higher than cart z-index */
+}
+
+/* Target all Voiceflow elements with vfrc prefix */
+[class*="vfrc-"] {
+  z-index: 999999 !important; /* Much higher than cart z-index */
+}
+
+/* Specific chat interface elements */
+.vfrc-header,
+.vfrc-messages,
+.vfrc-input,
+.vfrc-footer {
+  z-index: 999999 !important; /* Much higher than cart z-index */
+}
+
+/* Ensure the chat container itself has proper stacking */
+.vfrc-container {
+  z-index: 999999 !important; /* Much higher than cart z-index */
+  position: relative !important;
+}
+
+/* Target any element that might be part of the chat */
+[class*="vf-"],
+[class*="voiceflow"],
+[class*="chat"] {
+  z-index: 999999 !important; /* Much higher than cart z-index */
+}
+
+/* Force all chat-related elements to have maximum z-index */
+.vfrc-message,
+.vfrc-bubble,
+.vfrc-avatar,
+.vfrc-button,
+.vfrc-input-container,
+.vfrc-send-button {
+  z-index: 999999 !important; /* Much higher than cart z-index */
+}
 
 /*WATERMARK*/
 .vfrc-footer--watermark {
