@@ -3,34 +3,6 @@
   display: none !important;
 }
 
-/* Root Voiceflow container - target the main wrapper */
-/* #vf-widget,
-[data-voiceflow-chat],
-.voiceflow-chat,
-.vf-widget,
-[data-vf-container] {
-  z-index: 999999 !important;
-} */
-
-/* Chat container and overlay */
-/*.vfrc-widget {
-  z-index: 999999 !important;
-}
-
-.vfrc-overlay {
-  z-index: 999999 !important;
-}*/
-
-/* .vfrc-chat,
-.voiceflow-chat {
-  z-index: 999999 !important;
-} */
-
-/* Target all Voiceflow elements with vfrc prefix */
-/* [class*="vfrc-"] {
-  z-index: 999999 !important; Much higher than cart z-index 
-}*/
-
 /*WATERMARK*/
 .vfrc-footer--watermark {
     display: block; /* Ensures the element is in the layout */
@@ -70,7 +42,7 @@
   border: none !important; /* Remove any borders */
   padding: 0 !important; /* Remove any padding */
   right: 10px !important;
-  bottom: 100px !important;
+  bottom: 10px !important;
   position: fixed !important; /* Ensure fixed positioning */
   transform: none !important; /* Reset any transforms */
   z-index: -10 !important;
