@@ -1,6 +1,6 @@
 /* CHAT BUBBLE ICON */
 .vfrc-launcher {
-  background-image: url('https://highsky-web.netlify.app/assets/giff-BZwKyKmV.gif') !important;
+  background-image: url('https://highsky.ai/assets/patrica-C2lUC5Yr.png') !important;
   background-size: contain !important;
   background-position: center !important;
   width: 60px !important; /* Adjust width as needed */
@@ -33,7 +33,7 @@
 
 /* Set the avatar image */
 .vfrc-avatar {
-  background-image: url('https://highsky-web.netlify.app/assets/image-Bn5ooL-M.png') !important;
+  background-image: url('https://highsky.ai/assets/patrica-C2lUC5Yr.png') !important;
   background-size: contain !important; /* Cover the entire area */
   background-position: center !important;
 }
@@ -42,3 +42,4 @@
 .vfrc-avatar img {
   display: none !important;
 }
+
