@@ -1,0 +1,44 @@
+/* CHAT BUBBLE ICON */
+.vfrc-launcher {
+  background-image: url('https://highsky-web.netlify.app/assets/giff-BZwKyKmV.gif') !important;
+  background-size: contain !important;
+  background-position: center !important;
+  width: 60px !important; /* Adjust width as needed */
+  height: 60px !important; /* Adjust height as needed */
+  border: none !important; /* Remove any borders */
+  padding: 0 !important; /* Remove any padding */
+}
+
+/* Ensure the existing icon is not visible */
+.vfrc-launcher img {
+  display: none !important;
+}
+
+
+/*WATERMARK*/
+.vfrc-footer--watermark {
+    display: block; /* Ensures the element is in the layout */
+    text-align: center; /* Centers the text within the footer */
+    font-size: 0; /* Hides original text if any exists, while keeping the element in document flow */
+    width: 100%; /* Ensures the footer spans the full width of its container */
+}
+
+.vfrc-footer--watermark::after {
+    content: 'HighSkyAi | Egradina';
+    font-size: 10px; /* Sets font size for new content */
+    color: gray; /* Sets a non-intrusive gray color */
+    cursor: default; /* Default cursor to indicate non-clickable text */
+    visibility: visible; /* Ensures it's seen */
+}
+
+/* Set the avatar image */
+.vfrc-avatar {
+  background-image: url('https://highsky-web.netlify.app/assets/skalad-Bo7E4SNS.png') !important;
+  background-size: contain !important; /* Cover the entire area */
+  background-position: center !important;
+}
+
+/* Ensure the existing avatar is not visible */
+.vfrc-avatar img {
+  display: none !important;
+}
