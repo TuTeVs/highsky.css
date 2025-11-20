@@ -1,6 +1,6 @@
 /* CHAT BUBBLE ICON */
 .vfrc-launcher{
-  background-image: url('https://highsky.ai/assets/sporten_sklad.svg') !important;
+  background-image: url('https://highsky-web.netlify.app/assets/sklad3-EzcznJuB.png') !important;
   background-size: 130% !important; /* Scale up the image more */
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -38,7 +38,7 @@
 
 /* Set the avatar image */
 .vfrc-avatar {
-  background-image: url('https://highsky.ai/assets/logo-sportensklad-otpred-BWAqJTRi.png') !important;
+  background-image: url('https://highsky-web.netlify.app/assets/sklad3-EzcznJuB.png') !important;
   background-size: contain !important; /* Cover the entire area */
   background-position: center !important;
 }
