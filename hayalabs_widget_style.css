@@ -1,6 +1,6 @@
 /* CHAT BUBBLE ICON */
 .vfrc-launcher {
-  background-image: url('https://highsky-web.netlify.app/assets/skalad-Bo7E4SNS.png') !important;
+  background-image: url('https://highsky.ai/assets/skalad-Bo7E4SNS.png') !important;
   background-size: contain !important;
   background-position: center !important;
   width: 60px !important; /* Adjust width as needed */
@@ -40,7 +40,7 @@
 
 /* Set the avatar image */
 .vfrc-avatar {
-  background-image: url('https://highsky-web.netlify.app/assets/skalad-Bo7E4SNS.png') !important;
+  background-image: url('https://highsky.ai/assets/skalad-Bo7E4SNS.png') !important;
   background-size: contain !important; /* Cover the entire area */
   background-position: center !important;
 }
@@ -49,4 +49,5 @@
 .vfrc-avatar img {
   display: none !important;
 }
+
 
