@@ -21,7 +21,7 @@
 
 /* Set the avatar image */
 .vfrc-avatar {
-  background-image: url('https://highsky-web.netlify.app/assets/skalad-Bo7E4SNS.png') !important;
+  background-image: url('https://highsky.ai/assets/skalad-Bo7E4SNS.png') !important;
   background-size: contain !important; /* Cover the entire area */
   background-position: center !important;
 }
@@ -34,7 +34,7 @@
 /* CHAT BUBBLE ICON - Positioned within the chat interface */
 /* TARGET: This is the launcher bubble itself */
 .vfrc-launcher {
-  background-image: url('https://highsky-web.netlify.app/assets/skalad-Bo7E4SNS.png') !important;
+  background-image: url('https://highsky.ai/assets/skalad-Bo7E4SNS.png') !important;
   background-size: contain !important;
   background-position: center !important;
   width: 60px !important; /* Adjust width as needed */
